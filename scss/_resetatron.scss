@@ -1,0 +1,69 @@
+$text: #333;
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   font: 300 100%/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   color: $text;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h1 {
+	font-size: 225%;
+}
+h2 {
+	font-size: 200%;
+}
+h3 {
+	font-size: 175%;
+}
+h4 {
+	font-size: 150%;
+}
+h5 {
+	font-size: 125%;
+}
+h6  {
+	font-size: 100%;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+	list-style-position: inside;
+	padding: 0;
+	margin: .5rem 0;
+	li {
+		
+	}
+}
+
+blockquote {
+	border-left: 5px solid $text;
+	padding: 1rem;
+	font-style: italic;
+	margin: 1rem 0;
+	background: rgba($text, .3 );
+	color: white;
+	p {
+    	color: white;
+	}
+}
