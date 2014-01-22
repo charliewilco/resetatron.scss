@@ -1,8 +1,13 @@
 $liteblue: #c3dde4;
 $darkblue: #3990a4;
+$red: #b2222a;
 
 html {
     background: $liteblue;
+}
+
+p {
+    font-weight: 400;
 }
 
 .main {
@@ -14,7 +19,10 @@ html {
         color: $darkblue;
     }
 }
-
+a {
+    color: white;
+/*     &:hover { color: $red; } */
+}
 blockquote {
     color: white;
     p { color: white !important; }
@@ -66,5 +74,21 @@ blockquote {
             float: right;
             text-align: center;
         }
+    }
+}
+
+button {
+    padding: 1rem;
+    background: $darkblue;
+    font: 700 100%/1.4 "Helvetica", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border: 0;
+    border-radius: 25px;
+    background-image: -moz-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
+	background-image: -webkit-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
+	background-image: linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
+    &:hover {
+        background-image: -moz-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
+        background-image: -webkit-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
+        background-image: linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
     }
 }
