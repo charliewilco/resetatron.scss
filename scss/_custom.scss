@@ -1,0 +1,70 @@
+$liteblue: #c3dde4;
+$darkblue: #3990a4;
+
+html {
+    background: $liteblue;
+}
+
+.main {
+    max-width: 45rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    h1, h2, h3, h4, h5, h6 { color: white; }
+    p {
+        color: $darkblue;
+    }
+}
+
+blockquote {
+    color: white;
+    p { color: white !important; }
+}
+
+.intro {
+    max-width: 68rem;
+    margin: 2rem auto;
+    color: white;
+    padding: 1rem;
+    h1 {
+        font-weight: bold;
+        font-size: 9rem;
+        line-height: 1;
+        color: $darkblue;
+        @media (max-width:40rem) { font-size: 4rem; }
+    }
+    h2 {
+        font-size: 4rem; 
+        font-weight: bold; 
+        @media (max-width:40rem) { font-size: 2rem; }
+    }
+    code { color: $darkblue; }
+    
+    aside {
+        float: left;
+        width: 25%;
+        padding: 0 1rem 0 0;
+        img {
+            max-width: 100%;
+        }
+    }
+    article {
+        width: 75%;
+        float: left;
+    }
+    &:after {
+            content: "";
+            display: table;
+            clear: both;
+    }
+    
+    @media (max-width:40rem) {
+        article {
+            width: 100%;
+        }
+        aside {
+            width: 100%;
+            float: right;
+            text-align: center;
+        }
+    }
+}
