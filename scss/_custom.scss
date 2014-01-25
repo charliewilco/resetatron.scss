@@ -35,15 +35,18 @@ blockquote {
     padding: 1rem;
     h1 {
         font-weight: bold;
-        font-size: 9rem;
+        font-size: 8rem;
         line-height: 1;
         color: $darkblue;
-        @media (max-width:40rem) { font-size: 4rem; }
+        @media (max-width:40rem) { font-size: 3rem; }
     }
     h2 {
         font-size: 4rem; 
         font-weight: bold; 
-        @media (max-width:40rem) { font-size: 2rem; }
+        @media (max-width:40rem) { font-size: 1.75rem; }
+    }
+    h3 {
+        @media (max-width:40rem) { font-size: 1rem; }
     }
     code { color: $darkblue; }
     
@@ -90,5 +93,10 @@ button {
         background-image: -moz-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
         background-image: -webkit-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
         background-image: linear-gradient(180deg , rgb(57,144,164) 0%, rgb(75,191,218) 100%);
+    }
+    @media (max-width:40rem) {
+        display: block;
+        width: 100%;
+        margin: 1rem auto 0;
     }
 }

@@ -93,18 +93,21 @@ blockquote {
   padding: 1rem; }
   .intro h1 {
     font-weight: bold;
-    font-size: 9rem;
+    font-size: 8rem;
     line-height: 1;
     color: #3990a4; }
     @media (max-width: 40rem) {
       .intro h1 {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
   .intro h2 {
     font-size: 4rem;
     font-weight: bold; }
     @media (max-width: 40rem) {
       .intro h2 {
-        font-size: 2rem; } }
+        font-size: 1.75rem; } }
+  @media (max-width: 40rem) {
+    .intro h3 {
+      font-size: 1rem; } }
   .intro code {
     color: #3990a4; }
   .intro aside {
@@ -141,3 +144,8 @@ button {
     background-image: -moz-linear-gradient(180deg, #3990a4 0%, #4bbfda 100%);
     background-image: -webkit-linear-gradient(180deg, #3990a4 0%, #4bbfda 100%);
     background-image: linear-gradient(180deg, #3990a4 0%, #4bbfda 100%); }
+  @media (max-width: 40rem) {
+    button {
+      display: block;
+      width: 100%;
+      margin: 1rem auto 0; } }
