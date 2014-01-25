@@ -74,8 +74,6 @@ p {
   margin: 2rem auto; }
   .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
     color: white; }
-  .main p {
-    color: #3990a4; }
 
 a {
   color: white;
@@ -93,7 +91,7 @@ blockquote {
   padding: 1rem; }
   .intro h1 {
     font-weight: bold;
-    font-size: 8rem;
+    font-size: 7rem;
     line-height: 1;
     color: #3990a4; }
     @media (max-width: 40rem) {
@@ -123,6 +121,8 @@ blockquote {
     content: "";
     display: table;
     clear: both; }
+  .intro p {
+    max-width: 35rem; }
   @media (max-width: 40rem) {
     .intro article {
       width: 100%; }
@@ -132,11 +132,12 @@ blockquote {
       text-align: center; } }
 
 button {
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: #3990a4;
   font: 700 100%/1.4 "Helvetica", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   border: 0;
   border-radius: 25px;
+  margin: 0 .5rem;
   background-image: -moz-linear-gradient(180deg, #3990a4 0%, #40a3ba 100%);
   background-image: -webkit-linear-gradient(180deg, #3990a4 0%, #40a3ba 100%);
   background-image: linear-gradient(180deg, #3990a4 0%, #40a3ba 100%); }

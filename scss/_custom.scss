@@ -15,9 +15,7 @@ p {
     padding: 1rem;
     margin: 2rem auto;
     h1, h2, h3, h4, h5, h6 { color: white; }
-    p {
-        color: $darkblue;
-    }
+    p { }
 }
 a {
     color: white;
@@ -35,7 +33,7 @@ blockquote {
     padding: 1rem;
     h1 {
         font-weight: bold;
-        font-size: 8rem;
+        font-size: 7rem;
         line-height: 1;
         color: $darkblue;
         @media (max-width:40rem) { font-size: 3rem; }
@@ -67,6 +65,7 @@ blockquote {
             display: table;
             clear: both;
     }
+    p { max-width: 35rem; }
     
     @media (max-width:40rem) {
         article {
@@ -81,11 +80,12 @@ blockquote {
 }
 
 button {
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: $darkblue;
     font: 700 100%/1.4 "Helvetica", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     border: 0;
     border-radius: 25px;
+    margin: 0 .5rem;
     background-image: -moz-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
 	background-image: -webkit-linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
 	background-image: linear-gradient(180deg , rgb(57,144,164) 0%, rgb(64,163,186) 100%);
