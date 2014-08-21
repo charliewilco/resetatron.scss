@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-    // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
@@ -9,6 +8,16 @@ module.exports = function(grunt) {
             build: {
                 src: 'src/<%= pkg.name %>.js',
                 dest: 'build/<%= pkg.name %>.min.js'
+            }
+        },
+        connect: {
+            server: {
+              options: {
+                port: 9001,
+                base: './',
+				open: true,
+                livereload: true
+              }
             }
         },
         sass: {
@@ -22,16 +31,21 @@ module.exports = function(grunt) {
             css: {
                 files: 'scss/*.scss',
                 tasks: ['sass'],
-                options: {
-                    livereload: true,
-                }
+                options: { livereload: 35729 }
+            },
+            html: {
+                files: '*.html',
+                options: { livereload: 35729 }
             }
         }
     });
-    // Load the plugin that provides the "uglify" task.
+
+
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     // Default task(s).
     grunt.registerTask('default', ['sass']);
+    grunt.registerTask('dev', ['connect', 'watch']);
 };
