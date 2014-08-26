@@ -1,0 +1,149 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font: 400 100%/1.5 Avenir, Helvetica, "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #333333; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 0 0 .5rem;
+  line-height: 1.2; }
+
+h4, h5, h6 {
+  font-weight: 400;
+  margin: 0 0 .5rem;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.75rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+h5 {
+  font-size: 1.125rem; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  margin-bottom: 1rem;
+  max-width: 38rem;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility; }
+p:last-of-type {
+  margin-bottom: 0; }
+
+b, strong {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: .5rem 0; }
+ul li ul, ol li ul {
+  margin-left: 1rem; }
+
+blockquote {
+  border-left: 5px solid #333333;
+  padding: 1.5rem;
+  font-style: italic;
+  margin: 1rem 0;
+  background: rgba(51, 51, 51, 0.3);
+  color: white; }
+blockquote p {
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0 0 .5rem; }
+
+html {
+  background: #a7cdd7; }
+
+p {
+  font-weight: 400; }
+
+.main {
+  max-width: 38rem;
+  padding: 1rem;
+  margin: 2rem auto; }
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+  color: white; }
+
+a {
+  color: white; }
+
+blockquote {
+  color: white; }
+blockquote p {
+  color: white !important; }
+
+.intro {
+  max-width: 38rem;
+  margin: 2rem auto;
+  color: white;
+  padding: 1rem; }
+.intro footer {
+  margin-top: 2rem; }
+.intro h1 {
+  line-height: 1;
+  color: #3990a4; }
+@media (max-width: 40rem) {
+  .intro h1 {
+    font-size: 2.5rem; } }
+.intro code {
+  color: #3990a4; }
+.intro aside {
+  position: relative; }
+.intro aside img {
+  max-width: 15rem;
+  display: block;
+  margin: 0 auto; }
+.intro article {
+  padding: .5rem;
+  position: absolute;
+  top: 5rem;
+  background-image: linear-gradient(to top, #a7cdd7 50%, transparent 100%); }
+.intro p {
+  max-width: 35rem; }
+@media (max-width: 40rem) {
+  .intro article {
+    width: 100%; }
+  .intro aside {
+    width: 100%;
+    float: right;
+    text-align: center; } }
+
+.btn {
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #3990a4;
+  border: 2px solid;
+  border-radius: .5rem;
+  margin: .5rem .25rem;
+  transition: all 375ms linear; }
+.btn:hover, .btn:focus {
+  background: #346674;
+  color: white; }
+@media (max-width: 40rem) {
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 1rem auto 0; } }

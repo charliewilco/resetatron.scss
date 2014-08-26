@@ -20,11 +20,14 @@ module.exports = function(grunt) {
               }
             }
         },
-        sass: {
-            dist: {
-                files: {
-                    'css/main.css': 'scss/main.scss'
-                }
+          sass: {                              
+            dist: {                            
+              options: {                       
+                style: 'expanded'
+              },
+              files: {
+                'css/atron.css': 'scss/main.scss',
+              }
             }
         },
         watch: {
