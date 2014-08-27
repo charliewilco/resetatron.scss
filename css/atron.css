@@ -74,7 +74,13 @@ blockquote p {
   margin: 0 0 .5rem; }
 
 html {
-  background: #a7cdd7; }
+  background: #a7cdd7;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 p {
   font-weight: 400; }
@@ -112,23 +118,24 @@ blockquote p {
 .intro aside {
   position: relative; }
 .intro aside img {
-  max-width: 18rem;
+  max-width: 15.6rem;
   display: block;
-  margin: 0 auto; }
+  margin: 0 0 0 auto; }
+@media (max-width: 40rem) {
+  .intro aside {
+    position: static; } }
 .intro article {
-  padding: .5rem;
   position: absolute;
-  top: 5rem;
-  background-image: linear-gradient(to top, #a7cdd7 50%, transparent 100%); }
+  padding: 1rem 1rem 0;
+  top: 5rem; }
 .intro p {
-  max-width: 35rem; }
+  max-width: 35rem;
+  padding: 0 0 2rem;
+  background: #a7cdd7;
+  margin-bottom: 0; }
 @media (max-width: 40rem) {
   .intro article {
-    width: 100%; }
-  .intro aside {
-    width: 100%;
-    float: right;
-    text-align: center; } }
+    max-width: 100%; } }
 
 .btn {
   padding: 1rem 2rem;
@@ -145,5 +152,5 @@ blockquote p {
 @media (max-width: 40rem) {
   .btn {
     display: block;
-    width: 100%;
+    max-width: 100%;
     margin: 1rem auto 0; } }

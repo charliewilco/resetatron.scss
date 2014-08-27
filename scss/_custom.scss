@@ -2,7 +2,16 @@ $liteblue: #c3dde4;
 $darkblue: #3990a4;
 $red: #b2222a;
 
-html { background: mix($liteblue, $darkblue, 80%); }
+html {
+    background: mix($liteblue, $darkblue, 80%);
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
 
 p { font-weight: 400; }
 
@@ -40,28 +49,27 @@ blockquote {
     aside {
         position: relative;
         img {
-            max-width: 18rem;
+            max-width: 15.6rem;
             display: block;
-            margin: 0 auto;
+            margin: 0 0 0 auto;
+        }
+        @media (max-width:40rem) {
+            position: static;
         }
     }
     article {
-        padding: .5rem;
         position: absolute;
+        padding: 1rem 1rem 0;
         top: 5rem;
-        background-image: linear-gradient(to top, mix($liteblue, $darkblue, 80%) 50%, rgba(0, 0, 0, 0) 100%);
     }
-    p { max-width: 35rem; }
-
+    p {
+        max-width: 35rem;
+        padding: 0 0 2rem;
+        background: mix($liteblue, $darkblue, 80%);
+        margin-bottom: 0;
+    }
     @media (max-width:40rem) {
-        article {
-            width: 100%;
-        }
-        aside {
-            width: 100%;
-            float: right;
-            text-align: center;
-        }
+        article { max-width: 100%; }
     }
 }
 
@@ -77,7 +85,7 @@ blockquote {
     &:hover, &:focus { background: darken($liteblue, 50%); color: white; }
     @media (max-width:40rem) {
         display: block;
-        width: 100%;
+        max-width: 100%;
         margin: 1rem auto 0;
     }
 }
