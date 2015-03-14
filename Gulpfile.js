@@ -2,7 +2,8 @@ var gulp     		 = require('gulp'),
 		sass         = require('gulp-sass'),
 		plumber      = require('gulp-plumber'),
 		autoprefixer = require('gulp-autoprefixer'),
-		size         = require('gulp-size');
+		del          = require('del'),
+		size         = require('gulp-size'),
 		pixrem       = require('gulp-pixrem');
 
 gulp.task('styles', function(){
@@ -15,9 +16,14 @@ gulp.task('styles', function(){
 	.pipe(gulp.dest('css/'));
 });
 
+gulp.task('clean', function (cb) {
+  del([ 'css/**' ], cb);
+});
+
+
 
 gulp.task('watch', function(){
 	gulp.watch(['_resetatron.scss','./base/*.scss'], ['styles']);
 });
 
-gulp.task('default', ['styles', 'watch']);
+gulp.task('default', ['clean', 'styles', 'watch']);
