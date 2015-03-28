@@ -1,6 +1,6 @@
 {
   "name": "resetatron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reset and typographic helpers for arsenal.scss",
   "main": "index.js",
   "scripts": {
