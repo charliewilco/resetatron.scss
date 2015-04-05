@@ -1,5 +1,5 @@
 html {
-	font: $baseFontWeight 100%/1.5 $sans-serif;
+	font: $base--font_weight 100%/1.5 $sans-serif;
 	color: $text;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -8,21 +8,21 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
-	margin: 0 0 $baseFontSize/2;
+	margin: 0 0 $base--font_size/2;
 	line-height: 1.2;
 }
 
-h1 { font-size: $baseFontSize + $baseFontSize; }
-h2 { font-size: $baseFontSize + ($baseFontSize*.75); }
-h3 { font-size: $baseFontSize + ($baseFontSize/2); }
-h4 { font-size: $baseFontSize + ($baseFontSize/4); }
-h5 { font-size: $baseFontSize + ($baseFontSize/8); }
-h6 { font-size: $baseFontSize; }
+h1 { font-size: $base--font_size + $base--font_size; }
+h2 { font-size: $base--font_size + ($base--font_size*.75); }
+h3 { font-size: $base--font_size + ($base--font_size/2); }
+h4 { font-size: $base--font_size + ($base--font_size/4); }
+h5 { font-size: $base--font_size + ($base--font_size/8); }
+h6 { font-size: $base--font_size; }
 
 p {
-	margin-bottom: $baseFontSize;
+	margin-bottom: $base--font_size;
 	max-width: 38rem;
-	font-size: $baseFontSize;
+	font-size: $base--font_size;
 	word-wrap: break-word;
 	text-rendering: optimizeLegibility;
 	&:last-of-type { margin-bottom: 0; }
@@ -34,8 +34,8 @@ i, em { font-style: italic; }
 
 a {
 	text-decoration: none;
-	color: $baseColor;
-	transition: all $transition-duration $transition-func;
+	color: $base--color;
+	transition: all $transition--duration $transition--func;
 }
 
 ul, ol {
@@ -43,8 +43,8 @@ ul, ol {
 	padding: 0;
 	margin: 0;
 	li {
-		font-size: $baseFontSize;
-		ul { margin-left: $baseFontSize; }
+		font-size: $base--font_size;
+		ul { margin-left: $base--font_size; }
 	}
 }
 
@@ -52,27 +52,28 @@ blockquote {
 	padding: 1.5rem 0;
 
 	margin: 1rem 0;
-	color: $baseColor;
+	color: $base--color;
 	p {
 		line-height: 1.6;
-		font-weight: $baseFontWeight;
+		font-weight: $base--font_weight;
 		font-style: italic;
-		font-size: $baseFontSize + ($baseFontSize/4);
+		font-size: $base--font_size + ($base--font_size/4);
 	}
 	cite {
 		color: $litegray;
 		font-style: normal;
-		font-size: $baseFontSize;
+		font-size: $base--font_size;
 		&::before {
 			content: "";
 			width: 5rem;
 			height: 2px;
 			display: block;
 			margin: .5rem 0;
-			background: $baseColor;
+			background: $base--color;
 		}
 	}
 }
+
 
 blockquote {
     border-left: 5px solid $text;

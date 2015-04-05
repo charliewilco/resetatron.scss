@@ -12,8 +12,8 @@ $weights: 300, 400, 700;
 @for $i from 1 through 3 {
 	.text-col-#{$i} {
 		column-count: $i;
-		column-width: $w/$i;
-		column-gap: $baseFontSize*2;
+		column-width: $max--width/$i;
+		column-gap: $base--font_size*2;
 	}
 }
 
