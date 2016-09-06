@@ -4,4 +4,4 @@
   <img src="https://unpkg.com/vvwip/IGVP.svg" align="right" alt="IGVP" />
 </a>
 
-Sass Typographic Reset
+A collection of Sass snippets for a typographic reset and browser normalize.

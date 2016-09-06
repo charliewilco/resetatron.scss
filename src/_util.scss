@@ -1,29 +1,29 @@
 // utilities for type
 
-.caps { text-transform: uppercase; }
-.lower { text-transform: lowercase; }
-.tt-none { text-transform: none; }
+.u-caps { text-transform: uppercase; }
+.u-lower { text-transform: lowercase; }
+.u-ttn { text-transform: none; }
 
 $weights: 300, 400, 700;
 @each $weight in $weights {
-	.w-#{$weight} { font-weight: #{$weight}; }
+  .w-#{$weight} { font-weight: #{$weight}; }
 }
 
 @for $i from 1 through 3 {
-	.text-col-#{$i} {
-		column-count: $i;
-		column-width: $w/$i;
-		column-gap: $baseFontSize*2;
-	}
+  .u-txt-col--#{$i} {
+    column-count: $i;
+    column-width: $w/$i;
+    column-gap: $baseFontSize*2;
+  }
 }
 
 
 $dirs: left, right, center;
 @each $dir in $dirs {
-	.#{$dir} { text-align: #{$dir}; }
+  .u-#{$dir} { text-align: #{$dir}; }
 }
 
 
 @for $i from 0 through 5 {
-	.lt-#{$i} { letter-spacing: #{$i}px; }
+  .u-lt-#{$i} { letter-spacing: #{$i}px; }
 }

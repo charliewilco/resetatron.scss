@@ -4,7 +4,7 @@
   "description": "reset and typographic helpers for arsenal.scss",
   "main": "index.js",
   "scripts": {
-    "bundle": "node-sass ./index.scss ./dist/flexo.css -o dist --output-style expanded"
+    "bundle": "node-sass ./index.scss ./dist/resetatron.css -o dist --output-style expanded"
   },
   "repository": {
     "type": "git",

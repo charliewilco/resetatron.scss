@@ -1,9 +1,12 @@
 * {
-	padding: 0;
-	margin: 0;
-	&, &:before, &:after {
-		box-sizing: inherit;
-	}
+  padding: 0;
+  margin: 0;
+
+  &,
+  &:before
+  &:after {
+    box-sizing: inherit;
+  }
 }
 
 html { box-sizing: border-box; }
@@ -11,11 +14,13 @@ html { box-sizing: border-box; }
 iframe { border: 0; }
 
 img {
-	max-width: 100%;
-	height: auto;
-	border: 0;
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
 
-input, textarea, button {
-	font-family: inherit;
+input,
+textarea,
+button {
+  font-family: inherit;
 }
