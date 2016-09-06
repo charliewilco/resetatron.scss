@@ -1,10 +1,7 @@
-Resetatron
----
+# Resetatron
 
-SASS Typographic Reset
+<a href="https://github.com/charlespeters/VVWIP" align="right">
+  <img src="https://unpkg.com/vvwip/IGVP.svg" align="right" alt="IGVP" />
+</a>
 
-### Installing
-
-### Using with Gulp
-
-### Testing
+Sass Typographic Reset
